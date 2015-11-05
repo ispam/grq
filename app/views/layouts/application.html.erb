@@ -1,14 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Grq</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<%= yield %>
+    <title><%= content_for?(:title) ? yield(:title) : "GRQ" %></title>
 
-</body>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <%= render partial: "elements/navbar" %>
+    <%= yield %>
+   <div id="footer" style="background:#F9B233 !important; -webkit-box-shadow: 0px -3px 5px 0px rgba(230,230,230,1);
+-moz-box-shadow: 0px -3px 5px 0px rgba(230,230,230,1);
+box-shadow: 0px -3px 5px 0px rgba(230,230,230,1);">
+        
+        <div class="row end">
+          <br>
+            <div class="large-3 medium-3 small-6 columns">
+              <h4>Logo</h4>
+              <ul id="cerca"><a href="/pages/servicios" id="cerca2">Nuestros Servicios</a></ul>
+              <ul id="cerca"><a href="/pages/productos" id="cerca2">Nuestros Productos</a></ul>
+              <ul id="cerca"><a href="/pages/aliados" id="cerca2">Compañias Aliadas</a></ul>
+              <ul id="cerca"><a href="/pages/clientes" id="cerca2">Nuestros Clientes</a></ul>
+              <ul id="cerca"><a href="/pages/consumidor" id="cerca2">Consumidor Financiero</a></ul>
+              <ul id="cerca"><a href="/pages/contacto" id="cerca2">Contacto</a></ul>
+            </div>
+            <div class="large-3 medium-3 small-6 columns">
+              <h4><strong>Enlaces Rápidos</strong></h4>
+              <ul id="cerca"><a href="/pages/servicios" id="cerca2">Nuestros Servicios</a></ul>
+              <ul id="cerca"><a href="/pages/productos" id="cerca2">Nuestros Productos</a></ul>
+              <ul id="cerca"><a href="/pages/aliados" id="cerca2">Compañias Aliadas</a></ul>
+              <ul id="cerca"><a href="/pages/clientes" id="cerca2">Nuestros Clientes</a></ul>
+              <ul id="cerca"><a href="/pages/consumidor" id="cerca2">Consumidor Financiero</a></ul>
+              <ul id="cerca"><a href="/pages/contacto" id="cerca2">Contacto</a></ul>
+            </div>
+             <div class="large-3 medium-3 small-6 columns">
+              <h4 class="text-center"><strong>Contáctenos:</strong></h4>
+              <p class="text-center">Tel:+57(6)887 5100<br>
+              Cra 23A # 74 - 71 <br>
+              <strong>Oficina 802</strong><br>
+              Manizales, Colombia</p>
+            </div>
+             <div class="large-3 medium-3 small-6 columns">
+              <h4 class="text-center"><strong>Redes Sociales</strong></h4>
+              <p class="text-center">Tel:+57(6)887 5100<br>
+              Cra 23A # 74 - 71 <br>
+              <strong>Oficina 802</strong><br>
+              Manizales, Colombia</p>
+            </div>
+          <br>
+        </div>
+        <br>
+        
+      </div> 
+
+    <script>
+      $(document).foundation();
+       $(document).ready(function() {
+         fixFooter();//at page load
+       });
+
+       $(window).resize(function() {
+         fixFooter();//at page resize
+       });
+
+       function fixFooter() {
+         footer=$("#footer");
+         height=footer.height();
+         paddingTop=parseInt(footer.css('padding-top'),10);//zero if is undefined
+         paddingBottom=parseInt(footer.css('padding-bottom'),10);//zero if is undefined
+         totalHeight=(height+paddingTop+paddingBottom);
+         footerPosition=footer.position();
+         windowHeight=$(window).height();
+         height=(windowHeight - footerPosition.top)-totalHeight;
+         if ( height > 0 ) {
+           footer.css({
+             'margin-top': (height) + 'px'
+           });
+         }
+       }
+    </script>
+  </body>
 </html>

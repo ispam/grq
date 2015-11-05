@@ -1,5 +1,16 @@
 source 'https://rubygems.org'
-
+# ruby "2.2.3"
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master'
+gem "figaro"
+gem 'kaminari'
+gem 'ransack'	
+gem "refile", require: "refile/rails", github: "refile/refile"
+gem "refile-mini_magick"
+gem "refile-s3"
+gem 'rails_12factor', group: :production
+gem 'devise'
+gem 'activeadmin', github: 'activeadmin'
+gem 'foundation-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
