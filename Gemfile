@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 # ruby "2.2.3"
+gem "font-awesome-rails"
 gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master'
 gem "figaro"
 gem 'kaminari'
