@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require font-awesome
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+ #cerca2{
+ 	color:#183A51 !important;
+ }
+ #cerca2:hover{
+ 	color: #338A5B !important;
+ }
+ #cerca{
+ 	height:10px;
+ }
+ 
+// .top-bar {
+//     max-width: 2000px !important;
+// }
+
+// nav.top-bar {
+// text-align:center;
+// }
+// section.top-bar-section {
+// display: inline-block;
+// }
+
+// .top-bar
+// {
+//     background: none;
+//     // padding: 45px 0.9375rem 4px 0.9375rem;
+//     transition: all 0.5s ease 0.1s;
+//     // LOGO ADJUSTMENT
+//     ul.title-area img {
+//         margin: -10px 0 0 0;
+//     }
+//     .top-bar-section ul {
+//         background: none;
+//         // MENU ITEM STYLES
+//         li a:not(.button), li.active a:not(.button) {
+//             background: none;
+//             line-height: 30px;
+//             font-size: 12px;
+//             padding: 0;
+//             margin: 5px 0 0 0;
+//             text-transform: uppercase;
+//         }
+//         // MENU ITEM HOVERS
+//         li a:not(.button):hover {
+//             background: none;
+//             border-bottom: 2px solid #a0d3e8;
+//             color: black;
+//         }
+//         // MENU ITEM ACTIVE
+//         li.active a:not(.button) {
+//             border-bottom: 2px solid #a0d3e8;
+//             color: black;
+//             &:hover {
+//                 background: none;
+//             }
+//         }
+//         li {
+//             margin-left: 30px;
+//             a {
+//                 color: grey;
+//             }
+//         }
+//     }
+//     // DROPDOWN MENU
+//     .top-bar-section ul li:hover:not(.has-form) > a {
+//         color: white;
+//     }
+//     .top-bar-section li ul.dropdown {
+//         background: white;
+//         border: 1px solid whiteSmoke;
+//         color: grey;
+//         li {
+//             border-bottom: 1px solid whiteSmoke;
+//             margin: 0;
+//             padding: 5px 15px 5px 15px;
+//         }
+//     }
+//     .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar-section li ul.dropdown li a:not(.button) {
+//         background: none;
+//         color: black;
+//         border-bottom: none;
+//         padding: 20px -4px 40px 45px;
+//     }
+//     .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+//         background: none;
+//         color: black;
+//     }
+//     // DROPDOWN ARROW
+//     .has-dropdown > a:after {
+//         border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+//         margin-top: -5px;
+//     }
+// }

@@ -1,0 +1,42 @@
+<div class="fixed contain-to-grid" style="-webkit-box-shadow: 10px 5px 25px 7px rgba(204,204,204,0.43);
+-moz-box-shadow: 10px 5px 25px 7px rgba(204,204,204,0.43);
+box-shadow: 10px 5px 25px 7px rgba(204,204,204,0.43);">
+  <nav class="top-bar" data-topbar>        
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/"><img src="/assets/logo.png"</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+        
+        <!--first row-->
+        
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="right" style="background-color: #7193AA !important">
+        <li class="active"><a ><i class="fa fa-home fa-2x"></i></a></li>
+        <li class="active"><a ><i class="fa fa-users fa-2x"></i></a></li>
+        <li class="active"><a ><i class="fa fa-credit-card fa-2x"></i></a></li>
+        <li class="active"><a ><i class="fa fa-phone fa-2x"></i></a></li>
+        <li class="active"><a ><i class="fa fa-share fa-2x"></i></a></li>                    
+      </ul>     
+     
+    </section>
+
+        
+    <section class="top-bar-section">
+      
+      <ul class="right">
+        <li><%= link_to "Quiénes Somos", productos_path %></li>
+        <li class="divider"></li>      
+        <li><%= link_to "Productos", servicios_path %></li>
+        <li class="divider"></li>
+        <li><%= link_to "Servicios", aliados_path %></li>
+        <li class="divider"></li>      
+        <li><%= link_to "Clientes", clientes_path %></li>              
+      </ul>     
+    </section>
+        
+        
+  </nav>
+</div>
