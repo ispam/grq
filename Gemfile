@@ -1,5 +1,5 @@
-# source 'https://rubygems.org'
-ruby "2.2.3"
+source 'https://rubygems.org'
+ruby "2.2.0"
 gem "font-awesome-rails"
 gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master'
 gem "figaro"
